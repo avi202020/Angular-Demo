@@ -1,0 +1,9 @@
+<div class="path-b">
+  <p>PAGE B</p>
+  <a href="/">Home</a>
+  <p>依赖注入演示</p>
+  <p>输入数字：</p>
+  <input [(ngModel)]="inputNumber">
+  <h2 [hidden]="isNumber(inputNumber)">不是有效数字，请重新输入！</h2>
+  <h2 [hidden]="!isNumber(inputNumber)">{{compute.getSquare(inputNumber)}}</h2>
+</div>
